@@ -1,0 +1,44 @@
+body
+{
+  color: white;
+  background: darkblue;
+}
+span
+{
+  font-size: 30px;
+  background-color: yellow;
+}
+#camera , #result
+{
+  border: 2px ridge cyan;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+
+.heading{
+  font-size: 30px;
+}
+
+#button1 {
+  background-color: chartreuse;
+}
+
+#button2 {
+  background-color: aquamarine;
+}
+
+#label1, #label2{
+  color: orange;
+}

@@ -1,0 +1,77 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h1 class="btn btn-warning heading">Emotion to Emoji Website</h1>
+      <br><br>
+      <span>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+      </span>
+
+      <p style="font-size: 22px; color:cyan;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: green">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam view - </label>
+        <div id="camera">
+        </div>
+        <br><br>
+        <button type="button" id="button1" onclick="takeImage()">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label id="label1">Prediction1</label>
+        <p class="emoji_name" id="emoji1"></p>
+        <p class="emoji" id="update_emoji1"></p>
+
+        <label id="label2">Prediction2</label>
+        <p class="emoji_name" id="emoji2"></p>
+        <p class="emoji" id="update_emoji2"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result">
+        </div>
+        <br><br>
+        <button type="button" id="button2" onclick="identifyImage()">Predict Emotion</button>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
